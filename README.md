@@ -25,9 +25,9 @@ git clone git@github.com:boolfalse/laravel-reverb-react-chat.git && cd laravel-r
 ```shell
 cp .env.example .env
 ```
-- Generate :
+- Generate application key :
 ```shell
-cp .env.example .env
+php artisan key:generate
 ```
 
 - Install the dependencies.
