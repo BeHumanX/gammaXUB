@@ -80,5 +80,6 @@ php artisan serve
 ```
 
 - **_[Optional]_** Check if connection is okay, use this following command
+```
 php artisan send:message
 ```
