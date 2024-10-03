@@ -25,6 +25,10 @@ git clone git@github.com:boolfalse/laravel-reverb-react-chat.git && cd laravel-r
 ```shell
 cp .env.example .env
 ```
+- Generate :
+```shell
+cp .env.example .env
+```
 
 - Install the dependencies.
 ```shell
@@ -34,7 +38,7 @@ composer install
 ```shell
 php artisan migrate
 ```
-- Uncommand these message and Command the SQLite Create a MySQL database and set the database credentials in the `.env` file:
+- Uncommand `DB_CONNECTION=mysql` and the rest of mysql configuration, and then Command `DB_CONNECTION=sqlite` to Create a MySQL database and set the database credentials in the `.env` file(Don't forget to Migrate the database too):
 ```shell
 //DB_CONNECTION=sqlite
 DB_CONNECTION=mysql
