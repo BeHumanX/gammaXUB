@@ -30,12 +30,13 @@ cp .env.example .env
 ```shell
 composer install
 ```
-- Migrate the Database
+- Migrate the Database(For folks using sqlite)
 ```shell
-php artisan serve
+php artisan migrate
 ```
-- Create a MySQL database and set the database credentials in the `.env` file:
+- Uncommand these message and Command the SQLite Create a MySQL database and set the database credentials in the `.env` file:
 ```shell
+//DB_CONNECTION=sqlite
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
